@@ -1,0 +1,58 @@
+body{
+    background-color: pink;
+}
+
+
+.imagenes{
+    height: 100px;
+    margin: 20px;
+}
+
+#juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#automatico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+    margin:  20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.actual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagenJuego{
+    width: 50px;
+    margin: 10px;
+}
+
+#puntaje{
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

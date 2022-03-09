@@ -62,8 +62,6 @@ ganaMano = () => {
 
     obtenerResp()
 
-    console.log('eleccion user: ', eleccionUser)
-    console.log('resp auto: ', respAuto)
 
     if (respAuto === 'piedra' && eleccionUser === 'papel') {
         ganadorMano = 2
@@ -95,23 +93,21 @@ ganaMano = () => {
     }
 
     puntaje.innerHTML = `
-    </h1>Puntaje: Jugador: ${ganados2} --- Computadora: ${ganados1}</h1>
+    <p>Puntaje: Jugador: ${ganados2} --- Computadora: ${ganados1}</p>
     `
 
     mano.innerHTML += `
     
     <div class="actual">
-    <h5>Jugador: </h5>
+    <p>Jugador: </p>
     <img src="imagenes/${eleccionUser}.png"class="imagenJuego">
-    <h5>Computadora:</h5>
+    <p>Computadora:</p>
     <img src="imagenes/${respAuto}.png"class="imagenJuego">
     </div>
 
     `
 
 
-    console.log("ganador de mano: ", ganadorMano)
-    console.log("ganados1: ", ganados1, "ganados2: ", ganados2)
 
 
     //Borrar imagen automatica
@@ -132,13 +128,12 @@ ganaMano = () => {
             ganadorManoString = 'Jugador'
         }
 
-        console.log(ganadorManoString)
 
         Swal.fire({
             title: `Ganador: ${ganadorManoString}`,
             timer: 5000,
             backdrop: `
-                rgba(0,0,123,0.4)                
+            rgba(4, 112, 0, 0.253)             
             `
         })
 

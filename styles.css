@@ -1,11 +1,19 @@
 body{
-    background-color: pink;
+    background-color: rgb(235, 235, 235);
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 .imagenes{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
     height: 100px;
     margin: 20px;
+
 }
 
 #juego{
@@ -55,4 +63,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
